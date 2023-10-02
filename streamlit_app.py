@@ -1,3 +1,4 @@
+import os
 from concurrent.futures import ThreadPoolExecutor
 from requests import get
 from hashlib import sha1
@@ -7,6 +8,7 @@ import aiohttp
 import asyncio 
 import base64
 import hmac
+os.system('pip install -r requirements.txt')
 
 THIS_FOLDER = path.dirname(path.abspath(__file__))
 targets = path.join(THIS_FOLDER, 'Target.txt')
